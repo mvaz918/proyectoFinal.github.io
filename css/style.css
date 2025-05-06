@@ -154,7 +154,7 @@ p {
 .btn-warning {
     background-color: var(--primary-color);
     border: none;
-    color: var(--white-color);
+    color: #333;
     font-size: 18px;
     font-weight: bold;
     padding: 12px 20px;
@@ -174,13 +174,13 @@ p {
 }
 
 .accordion-button.collapsed {
-    color: var(--text-color);
+    color: #333;
     background-color: var(--bg-color);
     border-color: #ddd;
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--white-color);
+    color: #333;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -258,19 +258,24 @@ p {
   }
   
   .navbar .navbar-brand {
-    color: #FF6A00;
+    color: #333;
     font-weight: bold;
     font-size: 1.5rem;
   }
   
   .navbar a {
-    color: var(--text-color);
+    color: #333;
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
   }
   
   .navbar a:hover {
-    color: var(--primary-color);
+    color: #333;
     border-bottom: 2px solid var(--primary-color);
   }
+
+  .seccion-roja-titulos-blancos h2 {
+    color: white;
+  }
+  

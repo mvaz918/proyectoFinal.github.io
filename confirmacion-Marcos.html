@@ -60,6 +60,25 @@
             history.replaceState(null, null, location.href);
         });
     </script>
+
+     
+  <!-- Control de caché -->
+  <meta http-equiv="cache-control" content="no-store">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
+
+  <!-- Evitar problemas con BFCACHE -->
+  <script>
+    window.addEventListener('pageshow', function(event) {
+      if (event.persisted) {
+        history.replaceState(null, null, location.href);
+      }
+    });
+    window.addEventListener('pagehide', function() {
+      history.replaceState(null, null, location.href);
+    });
+  </script>
+  
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
