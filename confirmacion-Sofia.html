@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Gracias por enviarnos tus datos. Descarga el PDF sobre cómo convertir lo que te gusta en tu carrera y descubre oportunidades profesionales en el campo creativo.">
+    <meta name="keywords" content="carrera, diseño interactivo, videojuegos, USFQ, tecnología, educación, desarrollo profesional, PDF">
+    <meta name="author" content="USFQ Diseño Interactivo">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gracias por Enviar tus Datos | USFQ Diseño Interactivo">
+    <meta property="og:description" content="Descarga el PDF sobre cómo convertir lo que te gusta en tu carrera y explora las mejores oportunidades laborales en la industria creativa.">
+    <meta property="og:image" content="url-de-imagen.jpg">
+    <meta property="og:url" content="url-de-la-pagina">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="Gracias por Enviar tus Datos | USFQ Diseño Interactivo">
+    <meta name="twitter:description" content="Descarga el PDF sobre cómo convertir lo que te gusta en tu carrera y descubre oportunidades laborales en la industria creativa.">
+    <meta name="twitter:image" content="url-de-imagen.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Gracias por Enviar tus Datos | USFQ Diseño Interactivo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZDPEQMBJ9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KZDPEQMBJ9');
+    </script>
+
+    <!-- Control de caché para evitar almacenamiento en BFCACHE -->
+    <meta http-equiv="cache-control" content="no-store">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <script>
+        // Evitar que la página se guarde en el bfcache usando eventos 'pageshow' y 'pagehide'
+        window.addEventListener('pageshow', function(event) {
+            // Se asegura que no se cargue el estado anterior de la página en el historial
+            if (event.persisted) {
+                history.replaceState(null, null, location.href);
+            }
+        });
+
+        window.addEventListener('pagehide', function() {
+            // Llamada adicional para limpiar cualquier estado guardado
+            history.replaceState(null, null, location.href);
+        });
+    </script>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">USFQ - Diseño Interactivo</a>
+            <div>
+                <a class="btn btn-outline-dark me-2" href="index.html">Inicio</a>
+                <a class="btn btn-outline-dark me-2" href="perfil-Sofia.html">Sofía</a>
+                <a class="btn btn-outline-dark" href="perfil-Marcos.html">Marcos</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero2 seccion-roja">
+        <h1>¡Muchas gracias por enviarnos tus datos!</h1>
+    </section>
+
+    <section class="seccion-blanca">
+        <p>Disfruta este PDF sobre cómo convertir lo que te gusta en tu carrera y descubrir nuevas oportunidades profesionales en el campo creativo.</p>
+        <a href="pdf-link.pdf" class="btn btn-warning" download>Descargar PDF</a>
+    </section>
+
+</body>
+</html>

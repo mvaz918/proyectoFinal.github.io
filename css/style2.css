@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400;700&display=swap');
+
+/* === BASE === */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+h5 {
+    color: #00eaff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+/* === TIPOGRAFÍA === */
+a, .btn, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+/* === NAVBAR === */
+.navbar {
+    background-color: rgba(26, 26, 46, 0.9);
+    border-bottom: 2px solid #00eaff;
+    padding: 1rem 2rem;
+}
+
+.navbar .navbar-brand {
+    color: #00ffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00ffff;
+    border-bottom: 2px solid #00ffff;
+}
+
+/* === HERO SECTION === */
+.hero, .hero2 {
+    position: relative;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero {
+    background: url('../images/marcos.webp') no-repeat center center;
+}
+
+.hero2 {
+    background: url('../images/1.webp') no-repeat center center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.7);
+}
+
+/* === HIGHLIGHTS === */
+.highlight {
+    background: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+.highlight i {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* === SECCIONES === */
+.seccion-blanca {
+    background-color: white !important;
+    color: black !important;
+    padding: 20px;
+}
+
+.seccion-negra {
+    background-color: #1a1a2e !important;
+    color: white !important;
+    padding: 20px;
+}
+
+.seccion-blanca2 {
+    background-color: #1a1a2e;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* === FONDO DECORATIVO === */
+.container2 {
+    background: url('../images/fondo.webp') no-repeat center center;
+    background-size: cover;
+}
+
+/* === CARRUSEL === */
+.carousel-item img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.carousel-item img:hover {
+    filter: brightness(110%) contrast(105%);
+}
+
+/* === FORMULARIOS === */
+.form-control {
+    border-radius: 8px;
+    background-color: #0f3460;
+    color: white;
+    border: 1px solid #00eaff;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+    border-color: #00eaff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    outline: none;
+}
+
+
+/* === PREGUNTAS FRECUENTES === */
+.accordion-button {
+    background: linear-gradient(90deg, #0077ff, #00eaff);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background: linear-gradient(90deg, #00eaff, #0077ff);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.accordion-button:not(.collapsed) {
+    background: #0077ff;
+    color: white;
+}
+
+/* === BOTONES === */
+.btn-tech, .btn-warning {
+    background: linear-gradient(90deg, #00eaff, #0077ff);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+}
+
+.btn-tech:hover, .btn-warning:hover {
+    background: linear-gradient(90deg, #0077ff, #00eaff);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transform: scale(1.05);
+}
